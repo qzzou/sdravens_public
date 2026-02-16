@@ -48,9 +48,14 @@
   /* PROGRAM CARDS */
   .programs { padding: 0 16px; }
   .programs h2 { font-size: 1.3rem; font-weight: 800; text-transform: uppercase; letter-spacing: 1px; padding: 28px 0 20px; text-align: center; }
+  .pricing-row { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 14px; }
+  .pricing-card { background: #f8f8f8; border-top: 4px solid #1a3f7a; border-radius: 0 0 8px 8px; padding: 20px 14px; text-align: center; display: flex; flex-direction: column; }
+  .pricing-card h3 { font-size: 0.9rem; font-weight: 800; text-transform: uppercase; color: #222; margin-bottom: 10px; }
+  .pricing-card .price { font-size: 1.8rem; font-weight: 900; color: #1a3f7a; margin-bottom: 4px; }
+  .pricing-card .price-sub { font-size: 0.7rem; color: #999; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 14px; }
+  .pricing-card p { font-size: 0.8rem; color: #666; line-height: 1.5; text-align: left; flex: 1; }
   .program-card { background: #f8f8f8; border-left: 4px solid #1a3f7a; padding: 24px 20px; margin-bottom: 14px; border-radius: 0 8px 8px 0; }
   .program-card h3 { font-size: 1rem; font-weight: 800; text-transform: uppercase; margin-bottom: 8px; color: #222; }
-  .program-card h3 .tag { color: #1a3f7a; }
   .program-card p { font-size: 0.9rem; color: #666; line-height: 1.6; }
 
   /* STATS + ABOUT DARK BLOCK */
@@ -133,28 +138,33 @@
 <div class="programs" id="programs">
   <h2>Programs</h2>
 
-  <div class="program-card">
-    <h3><span class="tag">01.</span> Skill Training</h3>
-    <p>Weekly sessions with experienced coaches. Shooting, ball handling, footwork, court vision, and basketball IQ — the skills that earn you more minutes and help you make the next team.</p>
+  <div class="pricing-row">
+    <div class="pricing-card">
+      <h3>Training</h3>
+      <div class="price">$80</div>
+      <div class="price-sub">per month</div>
+      <p>One practice session per week with experienced coaches. Shooting, ball handling, footwork, court vision, and basketball IQ — the skills that earn you more minutes.</p>
+    </div>
+    <div class="pricing-card">
+      <h3>Training + League</h3>
+      <div class="price">$150</div>
+      <div class="price-sub">per month</div>
+      <p>Two practices per week plus competitive league games (Thrive, SOL) with certified refs and official scorekeeping. Minimum 6 games per season. 3-month commitment.</p>
+    </div>
   </div>
 
   <div class="program-card">
-    <h3><span class="tag">02.</span> League Play</h3>
-    <p>Competitive weekend games in established leagues (Thrive, SOL) with certified referees, official scorekeeping, and elite-level competition against top programs across San Diego.</p>
-  </div>
-
-  <div class="program-card">
-    <h3><span class="tag">03.</span> Camps &amp; Clinics</h3>
+    <h3>Camps &amp; Clinics</h3>
     <p>Summer and holiday intensive camps. Deep skill work, scrimmages, guest coaches, and team-building activities.</p>
   </div>
 
   <div class="program-card">
-    <h3><span class="tag">04.</span> For All Levels</h3>
+    <h3>For All Levels</h3>
     <p>No tryout cuts. Whether you're a starter or fighting for a roster spot, SDRavens helps you improve and compete.</p>
   </div>
 
   <div class="program-card">
-    <h3><span class="tag">05.</span> Offseason Focus</h3>
+    <h3>Offseason Focus</h3>
     <p>March through October — that's 7 months with no structured basketball. We fill that gap with programming across three seasons.</p>
   </div>
 </div>
