@@ -40,6 +40,18 @@ nav.main a.active{background:var(--red);color:#fff;}
 .hero img{height:190px;width:auto;margin:0 auto 20px;}
 .hero h1{font-size:52px;margin:0;text-transform:uppercase;line-height:1;color:var(--black);}
 .hero p.tag{color:var(--red);font-size:18px;margin:14px 0 0;letter-spacing:.04em;text-transform:uppercase;font-weight:600;}
+/* ---- tryouts banner ---- */
+.tryouts{background:var(--red);color:#fff;text-align:center;padding:20px;}
+.tryouts-in{max-width:var(--maxw);margin:0 auto;display:flex;flex-wrap:wrap;
+  align-items:baseline;justify-content:center;gap:4px 20px;}
+.tryouts-label{font-family:"Oswald",sans-serif;font-weight:700;font-size:36px;
+  letter-spacing:.08em;text-transform:uppercase;line-height:1.1;}
+.tryouts-detail{font-family:"Oswald",sans-serif;font-weight:500;font-size:28px;
+  letter-spacing:.03em;line-height:1.2;}
+@media(max-width:560px){
+  .tryouts-label{font-size:30px;} .tryouts-detail{font-size:22px;}
+}
+
 /* ---- flyer ---- */
 .flyer{max-width:var(--maxw);margin:0 auto;padding:36px 20px 56px;text-align:center;}
 .flyer img{width:100%;max-width:560px;height:auto;margin:0 auto;border-radius:10px;
