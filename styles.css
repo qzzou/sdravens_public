@@ -19,11 +19,11 @@ img{max-width:100%;display:block;}
 /* ---- header / nav (dark bar, white links, active = dark box) ---- */
 header.site{background:var(--ink);}
 .nav-wrap{max-width:1400px;margin:0 auto;display:flex;align-items:center;
-  justify-content:space-between;gap:12px;padding:8px 24px;flex-wrap:wrap;}
+  justify-content:space-between;gap:12px;padding:8px 24px;flex-wrap:nowrap;}
 .nav-brand{display:flex;align-items:center;gap:10px;text-decoration:none;}
 .nav-title{display:none;font-family:"Oswald",Arial,sans-serif;font-size:20px;color:#fff;line-height:1.1;}
 .nav-brand img{height:40px;width:auto;background:#fff;border-radius:6px;padding:3px 6px;}
-nav.main{display:flex;gap:2px;flex-wrap:wrap;}
+nav.main{display:flex;gap:2px;flex-wrap:nowrap;white-space:nowrap;}
 nav.main a{color:#fff;text-decoration:none;font-size:15px;font-weight:400;padding:8px 14px;border-radius:2px;}
 nav.main a:hover{background:rgba(255,255,255,.14);}
 nav.main a.active{background:#000;}
@@ -108,7 +108,7 @@ main.content p .linkcard{min-width:260px;}
 .menu-btn span{display:block;width:24px;height:2px;background:#fff;}
 .menu-btn:hover{background:rgba(255,255,255,.14);}
 .nav-scrim{display:none;}
-@media(max-width:1000px){
+@media(max-width:899px){
   .nav-wrap{justify-content:flex-start;flex-wrap:nowrap;}
   .menu-btn{display:flex;}
   .nav-title{display:block;}
@@ -124,3 +124,4 @@ main.content p .linkcard{min-width:260px;}
   .menu-open body{overflow:hidden;}
 }
 @media(max-width:360px){.nav-title{font-size:17px;}}
+@media(min-width:900px) and (max-width:1100px){nav.main a{padding:8px 10px;font-size:14px;}.nav-wrap{padding:8px 14px;}}
