@@ -15,10 +15,14 @@
 
 <header class="site">
   <div class="nav-wrap">
+    <button class="menu-btn" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="sitenav">
+      <span></span><span></span><span></span>
+    </button>
     <a class="nav-brand" href="index.html">
       <img src="assets/raven.png" alt="CCA Ravens logo">
+      <span class="nav-title">CCA Girls Basketball</span>
     </a>
-    <nav class="main">
+    <nav class="main" id="sitenav">
       <a href="index.html" class="active">Home</a>
       <a href="tryouts.html">Tryouts</a>
       <a href="roster.html">Roster</a>
@@ -30,6 +34,7 @@
     </nav>
   </div>
 </header>
+<div class="nav-scrim"></div>
 
 <section class="hero">
   <img src="assets/raven.png" alt="CCA Ravens logo">
@@ -62,5 +67,15 @@
   <script>document.getElementById('yr').textContent=new Date().getFullYear();</script>
 </footer>
 
+<script>
+(function(){
+  var b=document.querySelector('.menu-btn'),h=document.documentElement;
+  function set(o){h.classList.toggle('menu-open',o);b.setAttribute('aria-expanded',o);b.setAttribute('aria-label',o?'Close menu':'Open menu');}
+  b.addEventListener('click',function(){set(!h.classList.contains('menu-open'));});
+  document.querySelector('.nav-scrim').addEventListener('click',function(){set(false);});
+  document.querySelectorAll('nav.main a').forEach(function(a){a.addEventListener('click',function(){set(false);});});
+  document.addEventListener('keydown',function(e){if(e.key==='Escape')set(false);});
+})();
+</script>
 </body>
 </html>
