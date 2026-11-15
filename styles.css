@@ -125,3 +125,6 @@ main.content p .linkcard{min-width:260px;}
 }
 @media(max-width:360px){.nav-title{font-size:17px;}}
 @media(min-width:900px) and (max-width:1100px){nav.main a{padding:8px 10px;font-size:14px;}.nav-wrap{padding:8px 14px;}}
+
+/* sticky header on desktop */
+@media(min-width:900px){header.site{position:sticky;top:0;z-index:50;}}
