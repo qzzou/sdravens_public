@@ -22,7 +22,7 @@ header.site{background:var(--ink);}
   justify-content:space-between;gap:12px;padding:8px 24px;flex-wrap:nowrap;}
 .nav-brand{display:flex;align-items:center;gap:10px;text-decoration:none;}
 .nav-title{display:none;font-family:"Oswald",Arial,sans-serif;font-size:20px;color:#fff;line-height:1.1;}
-.nav-brand img{height:40px;width:auto;background:#fff;border-radius:6px;padding:3px 6px;}
+.nav-brand img{height:46px;width:auto;}
 nav.main{display:flex;gap:2px;flex-wrap:nowrap;white-space:nowrap;}
 nav.main a{color:#fff;text-decoration:none;font-size:15px;font-weight:400;padding:8px 14px;border-radius:2px;}
 nav.main a:hover{background:rgba(255,255,255,.14);}
@@ -128,3 +128,8 @@ main.content p .linkcard{min-width:260px;}
 
 /* sticky header on desktop */
 @media(min-width:900px){header.site{position:sticky;top:0;z-index:50;}}
+
+/* ---- home hero artwork ---- */
+.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;}
+.hero img.hero-art{height:340px;margin-bottom:10px !important;width:auto;max-width:100%;margin:0 auto;background:none;border-radius:0;padding:0;}
+@media(max-width:700px){.hero img.hero-art{height:250px;}}
